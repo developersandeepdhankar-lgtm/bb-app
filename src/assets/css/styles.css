@@ -1,0 +1,335 @@
+/* =====================================================
+   GOOGLE FONTS
+===================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100..900&display=swap');
+
+/* =====================================================
+   CORE THEME FILES
+===================================================== */
+@import url('http://wrraptheme.com/demo/assets/thinder-ai-style.css');
+@import url(theme.css);
+@import url(base.css);
+@import url(animation.css);
+
+/* =====================================================
+   BODY & TYPOGRAPHY
+===================================================== */
+body {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: var(--bs-body-color);
+}
+
+/* =====================================================
+   MONOSPACE NUMERALS (🔥 IMPORTANT FOR ACCOUNTS)
+===================================================== */
+.numeric,
+.amount,
+.currency,
+.text-end,
+.table td.text-end,
+.table th.text-end {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+}
+
+/* =====================================================
+   HEADINGS
+===================================================== */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* =====================================================
+   SIDEBAR (REDUCED WIDTH)
+===================================================== */
+.left-sidebar {
+    width: 220px;
+    min-width: 220px;
+    padding: 20px 16px;
+    background-color: var(--bs-body-bg);
+}
+
+.nav-sidebar {
+    width: 100%;
+}
+
+.nav-sidebar .nav-link {
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.content-area {
+    min-width: calc(100% - 220px);
+}
+
+.layout-fullwidth .left-sidebar {
+    left: -220px;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+.header .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* =====================================================
+   CARDS (REDUCED PADDING)
+===================================================== */
+.card {
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 12px;
+}
+
+.card h6 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dashboard-card:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+/* =====================================================
+   TABLES (TALLY-STYLE DENSITY)
+===================================================== */
+.table {
+    font-size: 13.5px;
+    margin-bottom: 12px;
+}
+
+.table th {
+    padding: 6px 10px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.table td {
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+.table-sm th,
+.table-sm td {
+    padding: 4px 8px;
+}
+
+/* =====================================================
+   TABLE ROW HOVER (SUBTLE)
+===================================================== */
+.table tbody tr {
+    transition: background-color 0.15s ease-in-out;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* Negative stock highlight already used */
+.table-danger {
+    background-color: rgba(220, 53, 69, 0.08) !important;
+}
+
+/* =====================================================
+   POPUPS / MODALS (IMPROVED TYPOGRAPHY)
+===================================================== */
+.modal-content {
+    border-radius: 10px;
+}
+
+.modal-header {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+.modal-title {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.modal-body {
+    padding: 16px;
+    font-size: 13.5px;
+    line-height: 1.45;
+}
+
+.modal-footer {
+    padding: 10px 16px;
+}
+
+.modal .table th {
+    background-color: var(--bs-light-bg-subtle);
+}
+
+/* Popup buttons */
+.modal .btn {
+    font-size: 13px;
+    padding: 4px 10px;
+}
+
+/* =====================================================
+   FORMS
+===================================================== */
+.form-control,
+.form-select {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px;
+    padding: 6px 10px;
+}
+
+/* =====================================================
+   BREADCRUMBS
+===================================================== */
+.breadcrumbs-primary .page-name {
+    font-weight: 600;
+}
+
+/* =====================================================
+   PRINT (TALLY STYLE)
+===================================================== */
+@media print {
+    body * {
+        visibility: hidden;
+    }
+
+    .print-area,
+    .print-area * {
+        visibility: visible;
+    }
+
+    .print-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .table th,
+    .table td {
+        padding: 4px 6px;
+    }
+}
+
+
+/* =====================================================
+   VOUCHER UI (PREMIUM)
+===================================================== */
+
+
+
+.voucher-ui,
+.voucher-ui * {
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+.voucher-ui {
+    font-size: 13.5px;
+    color: #222;
+}
+
+/* Header */
+.voucher-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #eee;
+}
+
+.voucher-date,
+.voucher-narration {
+    margin-bottom: 4px;
+}
+
+/* Section */
+.voucher-section {
+    margin-bottom: 20px;
+}
+
+.voucher-section-title {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #555;
+}
+
+/* Tables */
+.voucher-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.voucher-table th {
+    background: #f6f7f9;
+    font-weight: 600;
+    padding: 6px 10px;
+    border: 1px solid #e3e3e3;
+}
+
+.voucher-table td {
+    padding: 6px 10px;
+    border: 1px solid #eee;
+}
+
+.voucher-table tbody tr:hover {
+    background: #fafafa;
+}
+
+/* Ledger styles */
+.ledger-party {
+    font-weight: 600;
+}
+
+.ledger-child {
+    padding-left: 24px;
+    color: #555;
+}
+
+/* Negative stock */
+.negative-row {
+    background: #fff2f2;
+}
+
+.badge-negative {
+    background: #dc3545;
+    color: #fff;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    margin-left: 6px;
+}
+
+/* Summary */
+.voucher-summary {
+    width: 320px;
+    margin-left: auto;
+    border-top: 2px solid #eee;
+    padding-top: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+.summary-strong {
+    font-weight: 600;
+}
+
+/* Footer */
+.voucher-footer {
+    margin-top: 16px;
+    text-align: right;
+}

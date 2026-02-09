@@ -1,0 +1,85 @@
+.india-map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+.india-map-svg {
+  width: 100%;
+  height: auto;
+}
+
+/* ===== MAP ===== */
+.map-path {
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.map-path:hover {
+  filter: brightness(1.08);
+}
+
+.map-label {
+  font-size: 11px;
+  font-weight: 700;
+  fill: #222;
+  pointer-events: none;
+}
+
+/* ===== TOOLTIP ===== */
+.map-tooltip {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px 12px;
+  min-width: 180px;
+  font-size: 13px;
+  color: #333;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.tooltip-title {
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.tooltip-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0;
+}
+
+.tooltip-row span {
+  font-weight: 600;
+}
+
+.tooltip-percent {
+  margin-top: 6px;
+  font-weight: 700;
+  color: #1b8f2f;
+}
+
+/* ===== TOOLTIP ARROW ===== */
+.map-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 8px solid transparent;
+}
+
+/* 👉 Tooltip on RIGHT side of state */
+.map-tooltip.arrow-left::after {
+  left: -16px;
+  border-right-color: #ffffff;
+}
+
+/* 👈 Tooltip on LEFT side of state */
+.map-tooltip.arrow-right::after {
+  right: -16px;
+  border-left-color: #ffffff;
+}

@@ -1,0 +1,78 @@
+/* ===============================
+   TABLE GLOBAL STYLE
+=============================== */
+
+.sales-ant-table .ant-table-cell {
+  padding: 8px 10px;
+  font-size: 13px;
+  vertical-align: middle;
+}
+
+/* ===============================
+   STATE NAME
+=============================== */
+
+.state-name {
+  display: inline-block;
+  max-width: 135px; /* ✅ reduced */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 500;
+}
+
+/* ===============================
+   MONEY FORMATTING
+=============================== */
+
+.money {
+  font-variant-numeric: tabular-nums;
+}
+
+.money.sales {
+  color: #1b8f2f;
+}
+
+.money.positive {
+  color: #1b8f2f;
+}
+
+.money.negative {
+  color: #c0392b;
+}
+
+/* ===============================
+   PROGRESS BAR
+=============================== */
+
+.progress-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 🔥 THIS is the key width reduction */
+.progress-cell .ant-progress {
+  width: 90px; /* ✅ reduced bar width */
+  margin-bottom: 0;
+}
+
+.percent-text {
+  min-width: 32px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: right;
+}
+
+/* ===============================
+   CLEAN LOOK
+=============================== */
+
+.sales-ant-table .ant-progress-outer {
+  padding-right: 0;
+}
+
+.sales-ant-table .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
