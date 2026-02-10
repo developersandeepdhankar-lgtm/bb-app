@@ -4,7 +4,7 @@ from app.core.database import get_db
 from app.models.role import Role
 from app.schemas.role import RoleCreate, RoleUpdate, RoleResponse
 
-router = APIRouter(prefix="/api/roles", tags=["Role Master"])
+router = APIRouter(prefix="/roles", tags=["Role Master"])
 
 # CREATE ROLE
 @router.post("/", response_model=RoleResponse, status_code=status.HTTP_201_CREATED)
